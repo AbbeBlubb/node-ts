@@ -4,6 +4,6 @@
 - TypeScript
 - Nodemon reloads on change with the TS engine
 - Express server
-- Endpoints returns Pug files
+- Endpoints returns Pug/HTML files
 
-Will be dockerized
+Will be dockerized, .env for secrets, husky
