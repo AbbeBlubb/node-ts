@@ -1,4 +1,4 @@
-# Boilerplate for Node project using TypeScript, Nodemon, Pug
+# Boilerplate configurated project: Node with TypeScript, Nodemon, Pug
 
 - Node
 - TypeScript

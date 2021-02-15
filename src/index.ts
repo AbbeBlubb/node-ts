@@ -4,9 +4,9 @@ import { pingRoute } from "./routes/ping.route";
 
 const PORT = 8080;
 
-let app = express();
+const app = express();
 
-app.set('view engine', 'pug');
+app.set("view engine", "pug");
 
 app.use(mainRoute);
 app.use(pingRoute);
