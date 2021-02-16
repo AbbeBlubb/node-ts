@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "start": "nodemon src/index.ts",
+    "dev": "nodemon src/index.ts",
     "eslint:lint": "eslint src/**/*.{ts,tsx}",
     "eslint:format": "eslint --fix src/**/*.{ts,tsx}",
     "prettier:test": "prettier -c ./.prettierrc src/**/*.{ts,tsx,js,json,css,less,sass,scss,less,html,pug,md}",
@@ -25,6 +25,7 @@
   "homepage": "https://github.com/AbbeBlubb/node-ts#readme",
   "devDependencies": {
     "@prettier/plugin-pug": "^1.13.3",
+    "@types/dotenv": "^8.2.0",
     "@types/express": "^4.17.11",
     "@types/node": "^14.14.28",
     "@typescript-eslint/eslint-plugin": "^4.15.0",
@@ -44,6 +45,7 @@
     "typescript": "^4.1.5"
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "pug": "^3.0.0"
   },

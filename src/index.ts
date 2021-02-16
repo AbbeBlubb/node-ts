@@ -2,8 +2,9 @@ import * as express from "express";
 import { mainRoute } from "./routes/main.route";
 import { pingRoute } from "./routes/ping.route";
 
-const PORT = 8080;
-
+import * as dotenv from "dotenv";
+dotenv.config();
+const PORT = process.env.PORT || 8080;
 const app = express();
 
 app.set("views", "src/views");
@@ -13,5 +14,5 @@ app.use(mainRoute);
 app.use(pingRoute);
 
 app.listen(PORT, () => {
-    console.log(`Server listening on port ${PORT} \nhttp://localhost:8080/`);
+    console.log(`Server listening on port ${PORT} \nhttp://localhost:${PORT}/`);
 });

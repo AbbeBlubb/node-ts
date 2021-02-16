@@ -1,4 +1,4 @@
-# Boilerplate configurated project: Node with TypeScript, Nodemon, Pug, ESLint + Prettier, Git Hooks with Husky + lint-staged 
+# Boilerplate configurated project: Node with TypeScript, Nodemon, Pug, ESLint + Prettier, Git Hooks with Husky + lint-staged
 
 - Node
 - TypeScript
@@ -6,5 +6,9 @@
 - Express server
 - Endpoints returns Pug/HTML files
 - ESLint with Prettier
+- Husky with lint-staged
 
-Will be dockerized, .env for secrets, husky
+Will be dockerized
+
+If problems with ports "already in use", Linux:
+lsof -i :3000 -t | xargs kill
