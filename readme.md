@@ -1,4 +1,4 @@
-# Boilerplate configurated project: Node with TypeScript, Nodemon, Pug, using ESLint + Prettier
+# Boilerplate configurated project: Node with TypeScript, Nodemon, Pug, ESLint + Prettier, Git Hooks with Husky + lint-staged 
 
 - Node
 - TypeScript
