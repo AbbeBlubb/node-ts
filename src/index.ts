@@ -6,7 +6,7 @@ const PORT = 8080;
 
 const app = express();
 
-app.set('views', 'src/views')
+app.set("views", "src/views");
 app.set("view engine", "pug");
 
 app.use(mainRoute);
