@@ -13,10 +13,8 @@
     "prettier:test": "prettier -c ./.prettierrc src/**/*.{ts,tsx,js,json,css,less,sass,scss,less,html,pug,md}",
     "prettier:format": "prettier -c ./.prettierrc --write src/**/*.{ts,js,json,css,sass,scss,less,html,pug,md}",
     "prettier:format-e2e": "prettier -c ./.prettierrc --write e2e/**/*.testcafe.ts",
-    "test:ui": "testcafe chrome:headless",
-    "test:ui-live": "testcafe --live --disable-screenshots",
-    "test:ui-debug": "testcafe chrome --disable-screenshots"
-
+    "test:e2e-live": "testcafe --live --disable-screenshots",
+    "test:e2e-debug": "testcafe chrome --disable-screenshots"
   },
   "repository": {
     "type": "git",

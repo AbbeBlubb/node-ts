@@ -30,16 +30,19 @@ Local machine:
 
 ## Tests
 
-Run tests and get coverage:
+Unit tests:
 
 ```nodejs
-> npm test
+> npm test // Run and get coverage
+> npm test:watch // Test watcher
 ```
 
-Test watcher:
+E2E-tests:
 
 ```nodejs
-> npm test:watch
+> npx testcafe chrome // With full browser
+> npx testcafe --live --disable-screenshots // No screenshots when live mode
+> npx testcafe chrome --disable-screenshots // with .debug()
 ```
 
 ## Misc
