@@ -11,7 +11,12 @@
     "eslint:lint": "eslint src/**/*.{ts,tsx}",
     "eslint:format": "eslint --fix src/**/*.{ts,tsx}",
     "prettier:test": "prettier -c ./.prettierrc src/**/*.{ts,tsx,js,json,css,less,sass,scss,less,html,pug,md}",
-    "prettier:format": "prettier -c ./.prettierrc --write src/**/*.{ts,js,json,css,sass,scss,less,html,pug,md}"
+    "prettier:format": "prettier -c ./.prettierrc --write src/**/*.{ts,js,json,css,sass,scss,less,html,pug,md}",
+    "prettier:format-e2e": "prettier -c ./.prettierrc --write e2e/**/*.testcafe.ts",
+    "test:ui": "testcafe chrome:headless",
+    "test:ui-live": "testcafe --live --disable-screenshots",
+    "test:ui-debug": "testcafe chrome --disable-screenshots"
+
   },
   "repository": {
     "type": "git",
@@ -42,6 +47,7 @@
     "lint-staged": "^10.5.4",
     "nodemon": "^2.0.7",
     "prettier": "^2.2.1",
+    "testcafe": "^1.11.0",
     "ts-jest": "^26.5.1",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.5"

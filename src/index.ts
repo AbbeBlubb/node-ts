@@ -4,7 +4,7 @@ import { pingRoute } from "./routes/ping.route";
 
 import * as dotenv from "dotenv";
 dotenv.config();
-const PORT = process.env.PORT || 8080;
+export const PORT = process.env.PORT || 8080;
 const app = express();
 
 app.set("views", "src/views");
