@@ -4,10 +4,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.dev
-      # > Successfully tagged compose-volumes_client:latest
-    restart: on-failure
+    restart: "no" #on-failure
     ports:
-      - "3000:6000"
+      - "3000:3000"
     volumes: 
       - .:/app
       - /app/node_modules
