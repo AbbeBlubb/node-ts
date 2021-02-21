@@ -61,7 +61,7 @@ dotenv.config();
 If using import in the app instead of require, preload the dotenv file when starting the app:
 
 ```nodejs
-node -r dotenv/config app.js
+> node -r dotenv/config app.js
 ```
 
 When using Nodemon, do this in the Nodemon config. In nodemon.json -> execMap -> ts, add:
