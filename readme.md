@@ -45,12 +45,45 @@ E2E-tests:
 > npx testcafe chrome --disable-screenshots // with .debug()
 ```
 
-## Misc
+## Preload dotenv file
 
-- If problems with ports "already in use", Linux:
+### Problem
 
-    ```bash
-    > lsof -i :6000 -t | xargs kill
-    ```
+.env vars are undefined in the app, despite being imported and loaded first thing in the app:
+
+```nodejs
+import * as dotenv from "dotenv";
+dotenv.config();
+```
+
+### Solution
+
+If using import in the app instead of require, preload the dotenv file when starting the app:
+
+```nodejs
+node -r dotenv/config app.js
+```
+
+When using Nodemon, do this in the Nodemon config. In nodemon.json -> execMap -> ts, add:
+
+```JavaScript
+-r dotenv/config
+ ```
+
+Then, you don't need to require and load dotenv in your application code. So delete:
+
+```nodejs
+import * as dotenv from "dotenv";
+dotenv.config();
+```
+
+
+## If port "already in use"
+
+- If problems with port "already in use", Linux:
+
+```bash
+> lsof -i :6000 -t | xargs kill
+```
 
 - If changing the port number in .env, remember to change the port mapping in docker-compose.yml
