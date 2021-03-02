@@ -77,8 +77,9 @@ import * as dotenv from "dotenv";
 dotenv.config();
 ```
 
-
 ## If port "already in use"
+
+### Kill process
 
 - If problems with port "already in use", Linux:
 
@@ -87,3 +88,7 @@ dotenv.config();
 ```
 
 - If changing the port number in .env, remember to change the port mapping in docker-compose.yml
+
+### Turn off Windows Fast startup
+
+Windows Fast startup might cause problems when using WSL2: <https://www.tenforums.com/tutorials/4189-turn-off-fast-startup-windows-10-a.html>
