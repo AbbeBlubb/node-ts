@@ -2,8 +2,10 @@ import * as express from "express";
 import { mainRoute } from "./routes/main.route";
 import { pingRoute } from "./routes/ping.route";
 
-import * as dotenv from "dotenv";
-dotenv.config();
+// dotenv is preloaded/required when running nodemon
+// To pre-load when not using nodemon, see the nodemon.json for command
+// import * as dotenv from "dotenv";
+// dotenv.config();
 export const PORT = process.env.PORT || 8080;
 const app = express();
 
